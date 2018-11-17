@@ -27,6 +27,7 @@ flags.DEFINE_string('output_path', '', 'Path to output TFRecord')
 FLAGS = flags.FLAGS
 
 print(FLAGS.image_path)
+print(FLAGS.image_path)
 
 # TO-DO replace this with label map
 def class_text_to_int(row_label):
