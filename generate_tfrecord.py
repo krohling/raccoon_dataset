@@ -22,9 +22,11 @@ from collections import namedtuple, OrderedDict
 
 flags = tf.app.flags
 flags.DEFINE_string('csv_input', '', 'Path to the CSV input')
+flags.DEFINE_string('image_path', '', 'Path to input images')
 flags.DEFINE_string('output_path', '', 'Path to output TFRecord')
 FLAGS = flags.FLAGS
 
+print(FLAGS.output_path)
 
 # TO-DO replace this with label map
 def class_text_to_int(row_label):
